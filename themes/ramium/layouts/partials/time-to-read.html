@@ -1,0 +1,6 @@
+{{ $time := math.Round (div (countwords .Content) 180.0) }}
+{{- if le $time 1 -}}
+    一分钟前
+{{- else -}}
+    {{ $time }} 分钟
+{{- end -}}

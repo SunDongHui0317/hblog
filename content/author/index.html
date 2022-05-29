@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ZET a corporate Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .back-home {
+            position: fixed;
+            left: 20px;
+            top: 30px;
+            cursor: pointer;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 42px;
+            font-size: 15px;
+            font-weight: 700;
+            border: 1px solid #e8e8e8;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container:before,
+        .container:after,
+        .container:after
+
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+
+        .banner {
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            text-align: center;
+            min-height: 350px;
+        }
+
+        .banner-info {
+            margin-top: 165px;
+        }
+
+        .banner-info h1 {
+            margin: 0;
+            font-size: 38px;
+            color: #cdcdcd;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        .banner-info p {
+            margin: 30px auto 50px auto;
+            font-size: 16px;
+            color: #e8e8e8;
+            text-align: center;
+            width: 55%;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button a {
+            color: #e8e8e8;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 42px;
+            font-size: 15px;
+            font-weight: 700;
+            border: 1px solid #e8e8e8;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .button a:hover {
+            border: 1px solid #e8e8e8;
+            color: #e8e8e8;
+            background: #29323c;
+            text-decoration: none;
+            transition: .5s all;
+            -webkit-transition: .5s all;
+            -moz-transition: .5s all;
+            -o-transition: .5s all;
+            -ms-transition: .5s all;
+        }
+
+        .clients {
+            min-height: 450px;
+            text-align: center;
+            padding: 60px 80px;
+        }
+        .slider-img img {
+            width: 100%;
+        }
+
+        .slider-img h3 {
+            margin: 30px 0 10px;
+            font-size: 16px;
+            color: #29323c;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .slider-img p {
+            margin: 0;
+            font-size: 14px;
+            color: #cdcdcd;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+
+        .tab {
+            overflow: hidden;
+            border: none;
+            background-color: transparent;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            border-bottom: 3px solid transparent;
+            outline: none;
+            cursor: pointer;
+            padding: 18px 20px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            border-bottom: 3px solid #1d72aa;
+        }
+
+        .tablinks {
+            font-weight: bold;
+        }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 0px solid #ccc;
+            border-top: none;
+        }
+
+        .map {
+            text-align: center;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+<div id="home" class="banner">
+    <a class="back-home" href="https://sundonghui0317.github.io/h.github.io">回到首页</a>
+    <div class="container">
+        <div class="banner-info">
+            <h1>孙东辉</h1>
+            <p>我还不知道该怎么介绍自己，如果你知道，请告诉我～</p>
+            <div class="button"><a href="mailto:donghui_sun@yeah.net">联系我</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="clients" class="container">
+    <div class="clients">
+        <h2>我的职业生涯</h2>
+        <div class="slider">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(this, 'JavaScript')"> JavaScript </button>
+                <button class="tablinks" onclick="openCity(this, 'Gopher')"> Gopher </button>
+            </div>
+
+            <div id="JavaScript" class="tabcontent">
+                <h3>JavaScript is my native language.</h3>
+                <p>Coming soon...</p>
+            </div>
+
+            <div id="Gopher" class="tabcontent">
+                <h3>I'm a Gopher now.</h3>
+                <p>Coming soon...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>我在这里 👉</h2>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1wZLTm1G_4X6itMRpHw7KXpkw3qc&hl=en_US&ehbc=2E312F"
+                width="640"
+                height="480"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
